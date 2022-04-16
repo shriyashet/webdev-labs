@@ -53,10 +53,10 @@ where posts.user_id=26 or posts.user_id=12;
 
 
 -- Exercise 9
-select p.id, p.pub_date,f.following_id
-from following f
-inner join posts p on f.following_id=p.user_id
-where f.user_id=26;
+select posts.id, posts.pub_date,following.following_id
+from following 
+inner join posts on following.following_id=posts.user_id
+where following.user_id=26;
 
 -- Exercise 10
 
