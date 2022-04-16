@@ -58,6 +58,7 @@ from following f
 inner join posts p on f.following_id=p.user_id
 where f.user_id=26;
 
+
 -- Exercise 10
 
 
